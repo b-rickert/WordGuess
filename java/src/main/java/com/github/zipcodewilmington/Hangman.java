@@ -9,14 +9,14 @@ import java.util.Scanner;
  */
 public class Hangman {
     public static void main(String[] args) {
-        System.out.println("Welcome to Hangman!");
-        String secretWord = "cat";
+        System.out.println("Welcome to the Bellows!");
+        String secretWord = "determination";
         int userGuessesNum = 6;
         Scanner scanner = new Scanner(System.in);
-        StringBuilder guessedWord = new StringBuilder("---");
+        StringBuilder guessedWord = new StringBuilder("-------------");
 
         while (true) {
-            System.out.println("Word: " + guessWord);
+            System.out.println("Word: " + guessedWord);
             System.out.println("Guesses remaining: " + userGuessesNum);
             System.out.print("Enter a letter? (or quit) ");
             String userInput = scanner.nextLine();
